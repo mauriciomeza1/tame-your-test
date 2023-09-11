@@ -1,0 +1,27 @@
+.hero-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tyt-logo {
+  width: 302px;
+  height: 131px;
+}
+
+.hero-main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1132px) {
+  .hero-main {
+    flex-direction: column;
+    align-items: center;
+  }
+}

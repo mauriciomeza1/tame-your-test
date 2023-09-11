@@ -1,0 +1,34 @@
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 56px;
+  width: 494px;
+}
+
+.primary-text {
+  text-align: center;
+  font-size: 44px;
+  height: 137px;
+  color: var(--dark-blue-gray);
+}
+
+.primary-bold {
+  font-weight: bold;
+}
+
+.secondary-text {
+  text-align: center;
+  width: 482px;
+  font-size: 18px;
+  color: var(--almost-black);
+}
+
+@media (max-width: 650px) {
+  .cta-container {
+    width: 340px;
+    gap: 30px;
+  }
+  .secondary-text {
+    width: 100%;
+  }
+}

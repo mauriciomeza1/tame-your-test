@@ -1,0 +1,47 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 2%;
+  right: 5%;
+  cursor: pointer;
+  z-index: 1000;
+  will-change: transform;
+}
+
+.back-to-top-btn {
+  background-color: var(--gold);
+  border: none;
+  color: var(--white);
+  padding: 15px 16px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-to-top-btn:hover {
+  background-color: #9a7b50;
+  transform: scale(1.05);
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid var(--white);
+}
+
+.fade-in-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fade-in-out.visible {
+  opacity: 1;
+}
+
+.fade-in-out.hidden {
+  opacity: 0;
+}

@@ -1,0 +1,145 @@
+.about-me-container {
+  padding-top: 50px;
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.about-me-info {
+  width: 100%;
+  max-width: 440px;
+  padding: 10px;
+}
+
+.about-me-info h2,
+.about-me-info h4 {
+  margin-bottom: 18px;
+  color: var(--dark-blue-gray);
+}
+
+.about-me-info h4 {
+  margin-top: 30px;
+}
+
+.about-me-info p {
+  margin-bottom: 10px;
+  color: var(--dark-blue-gray);
+  line-height: 24px;
+}
+
+.about-me-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-me-info span {
+  font-weight: 700;
+}
+
+.about-me-info li {
+  margin-top: 15px;
+  color: var(--dark-blue-gray);
+}
+
+.institutions-imgs {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -10px;
+}
+
+.institutions-imgs img {
+  margin-top: 20px;
+  align-self: center;
+  max-width: 60%;
+  height: auto;
+}
+
+.about-me-main-img-container {
+  width: 100%;
+  max-width: 408px;
+  padding: 10px;
+}
+
+.about-me-main-img {
+  width: 100%;
+  height: auto;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.section--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.list-item-hidden {
+  opacity: 0;
+  transform: translateY(4rem);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.list-item-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+@media (min-width: 768px) {
+  .about-me-info,
+  .about-me-main-img-container {
+    width: calc(50% - 20px);
+  }
+
+  .about-me-info {
+    padding-right: 20px;
+  }
+
+  .about-me-main-img-container {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-me-main-img {
+    max-width: 300px;
+  }
+  .institutions-imgs {
+    width: 60%;
+  }
+}
+
+@media (max-width: 680px) {
+  .about-me-container {
+    flex-wrap: wrap;
+  }
+
+  .about-me-main-img {
+    display: none;
+  }
+
+  .about-me-info h2 {
+    width: 100%;
+    background: url("../../assets/images/Image-2/Image-2.png") no-repeat center
+      center;
+    background-size: cover;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-gray);
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+}

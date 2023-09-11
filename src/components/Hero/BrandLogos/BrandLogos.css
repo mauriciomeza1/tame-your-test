@@ -1,0 +1,36 @@
+.brand-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-row,
+.bottom-row {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin: 20px;
+  align-self: center;
+  max-width: 250px;
+  max-height: 250px;
+  width: auto;
+  height: auto;
+}
+
+.logo.lazy-img {
+  filter: blur(10px);
+  transition: filter 0.3s ease-out;
+}
+
+@media (max-width: 875px) {
+  .logo {
+    max-width: 40%;
+    max-height: 100px;
+  }
+
+  .bottom-row {
+    width: 100%;
+  }
+}
