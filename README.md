@@ -23,13 +23,13 @@ Here are some of the main tools used to cook this project:
 1. **Grab the code:**
 
    ```bash
-   git clone https://github.com/mauriciomeza1/TameYourTest.git
+   git clone https://github.com/mauriciomeza1/tame-your-test
    ```
 
 2. **Jump into the project folder:**
 
    ```bash
-   cd TameYourTest
+   cd tame-your-test
    ```
 
 3. **Install the packages:**
